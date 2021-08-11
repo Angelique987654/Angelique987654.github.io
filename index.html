@@ -2,26 +2,137 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="./style/mystyle.css">
+    <title>AFRICAN-AMERICAN MUSIC</title>
+    <link rel="stylesheet" href="style.css">
+    <div class="lace two"></div>
 </head>
 
 <body>
-    <div id="container">
-        <div id="header">Welcome to Angelique's Class</div>
 
+    <h1> SOME AFRICAN-AMERICAN MUSIC THROUGHT THE YEARS</h1>
+    <br>
+    <div class="process-wrapper">
+        <div id="progress-bar-container">
+            <ul>
+                <li class="step step01 active">
+                    <div class="step-inner">SPIRITUALS</div>
+                </li>
+                <li class="step step02">
+                    <div class="step-inner">BLUES</div>
+                </li>
+                <li class="step step03">
+                    <div class="step-inner">JAZZ</div>
+                </li>
+                <li class="step step04">
+                    <div class="step-inner">RHYTHM & BLUES</div>
+                </li>
+                <li class="step step05">
+                    <div class="step-inner">ROCK & ROLL</div>
+                </li>
+            </ul>
 
-
-        <div id="speech">
-            <span class="page0">Hello what is your name?
-              <button></button>
-            </span>
+            <div id="line">
+                <div id="line-progress"></div>
+            </div>
         </div>
-        <div id="character">
-            poiuyfgdsxfcgvhbjknl;':?.lk,jhg'
-        </div>
 
-        <script src="./javascript/home.js"></script>
+        <div id="progress-content-section">
+            <div class="section-content discovery active">
+                <h2>SPIRITUALS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit
+                    ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at
+                    ex a, lacinia suscipit orci.</p>
+            </div>
+
+            <div class="section-content strategy">
+                <h2>BLUES</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit
+                    ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at
+                    ex a, lacinia suscipit orci.</p>
+            </div>
+
+            <div class="section-content creative">
+                <h2>JAZZ</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit
+                    ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at
+                    ex a, lacinia suscipit orci.</p>
+            </div>
+
+            <div class="section-content production">
+                <h2>RHYTHM & BLUES</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit
+                    ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at
+                    ex a, lacinia suscipit orci.</p>
+            </div>
+
+            <div class="section-content analysis">
+                <h2>ROCK & ROLL</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit
+                    ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at
+                    ex a, lacinia suscipit orci.</p>
+            </div>
+        </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(".step").click(function() {
+            $(this).addClass("active").prevAll().addClass("active");
+            $(this).nextAll().removeClass("active");
+        });
+
+        $(".step01").click(function() {
+            $("#line-progress").css("width", "3%");
+            $(".discovery").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step02").click(function() {
+            $("#line-progress").css("width", "25%");
+            $(".strategy").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step03").click(function() {
+            $("#line-progress").css("width", "50%");
+            $(".creative").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step04").click(function() {
+            $("#line-progress").css("width", "75%");
+            $(".production").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step05").click(function() {
+            $("#line-progress").css("width", "100%");
+            $(".analysis").addClass("active").siblings().removeClass("active");
+        });
+    </script>
+    <script src="https://www.wpromotions.eu/confetti.min.js"></script>
+    <script>
+        confetti.start()
+    </script>
+    <script>
+        setTimeout(function() {
+            confetti.stop();
+        }, 3000)
+    </script>
+
+    <div clas="grid"></div>
+    <br><br><br>
+
+    <a href="https://youtu.be/Thz1zDAytzU"><img src="https://balladofamerica.org/wp-content/uploads/2019/02/Early-African-American-Church-e1549450575266.jpg" style="width: 270px;height: 270px;"></a>
+    <a href="https://youtu.be/qaz4Ziw_CfQ"><img src="https://bkhonline.com/wp-content/uploads/2017/08/The-Blues-1024x865.jpg" style="width: 270px;height: 270px;"></a>
+    <a href="https://youtu.be/wyLjbMBpGDA"><img src="https://dcist.com/wp-content/uploads/sites/3/2021/03/Jazz.jpg" style="width: 270px;height: 270px;"></a>
+    <a href="https://youtu.be/8hEYwk0bypY"><img src="https://images-na.ssl-images-amazon.com/images/I/81Lh5fuy5JL._SL1500_.jpg" style="width: 270px;height: 270px;"></a>
+    <a href="https://youtu.be/6ROwVrF0Ceg"><img src="https://media-cdn.tripadvisor.com/media/photo-s/14/7f/1a/46/rock-n-roll-athens.jpg" style="width: 270px;height: 270px;"></a>
+    <h1>SOME OF MY FAVORITE ARTISTS</h1><br>
+    <a href="https://youtu.be/_y7hiflk0D4"><img src="https://images-na.ssl-images-amazon.com/images/I/31VnzMULHiL._SY445_SX342_QL70_ML2_.jpg" style="width: 270px;height: 270px;"></a>
+    <a href="https://youtu.be/7nyUr79pCd8"><img src="https://images.genius.com/d26e0e2fc03109321e60040cd11b0682.1000x1000x1.jpg" style="width: 270px;height: 270px;"></a>
+    <a href="https://youtu.be/hp0KiJs0S5g"><img src="data:image/jpeg;base64,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"
+            style="width: 270px;height: 270px;"></a>
+    <a href="https://youtu.be/McYy8pEniUc"><img src="https://thefader-res.cloudinary.com/private_images/w_1440,c_limit,f_auto,q_auto:best/D6vZgenU8AQnyco_bh6ki9/tyler-the-creator-igor-review.jpg" style="width: 270px;height: 270px;"></a>
+    <a href="https://youtu.be/NcHrGCcXU74"><img src="https://berkeleybside.com/wp-content/uploads/2019/12/mf-doom-recipes-tovah.png" style="width: 270px;height: 270px;"></a>
+
+
 
 </body>
 
