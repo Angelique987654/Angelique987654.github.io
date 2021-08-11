@@ -97,7 +97,7 @@ html {
     text-align: right;
 }
 
-a {
+.changemode a {
     color: #5d370c;
-
+background-color:#ccc;
 }
